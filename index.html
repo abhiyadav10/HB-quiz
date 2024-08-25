@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+        .results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Human Behavior Quiz</h1>
+    
+    <div id="quiz">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. What is psychology the science of?</p>
+            <input type="radio" name="q1" value="A"> A) Behavior<br>
+            <input type="radio" name="q1" value="B"> B) Mind and soul<br>
+            <input type="radio" name="q1" value="C"> C) Consciousness and brain<br>
+            <input type="radio" name="q1" value="D"> D) Memory and cognition
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. What carries messages from one part of the body to another?</p>
+            <input type="radio" name="q2" value="A"> A) Blood vessels<br>
+            <input type="radio" name="q2" value="B"> B) Neurons<br>
+            <input type="radio" name="q2" value="C"> C) Nerves<br>
+            <input type="radio" name="q2" value="D"> D) Muscles
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. What does the Central Nervous System consist of?</p>
+            <input type="radio" name="q3" value="A"> A) Brain and spinal cord<br>
+            <input type="radio" name="q3" value="B"> B) Nerves and muscles<br>
+            <input type="radio" name="q3" value="C"> C) Brain and heart<br>
+            <input type="radio" name="q3" value="D"> D) Spinal cord and nerves
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. The term "somatic" in somatic nerves is derived from which language?</p>
+            <input type="radio" name="q4" value="A"> A) Latin<br>
+            <input type="radio" name="q4" value="B"> B) Greek<br>
+            <input type="radio" name="q4" value="C"> C) Hebrew<br>
+            <input type="radio" name="q4" value="D"> D) Sanskrit
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>5. The sympathetic nervous system is responsible for producing what?</p>
+            <input type="radio" name="q5" value="A"> A) Relaxation<br>
+            <input type="radio" name="q5" value="B"> B) Excitement<br>
+            <input type="radio" name="q5" value="C"> C) Sleepiness<br>
+            <input type="radio" name="q5" value="D"> D) Hunger
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>6. Which nervous system carries message down from the  brain to rest part of the body?</p>
+            <input type="radio" name="q6" value="A"> A) Central Nervous System<br>
+            <input type="radio" name="q6" value="B"> B) Motor Nervous System<br>
+            <input type="radio" name="q6" value="C"> C) Parasympathic Nervous System<br>
+            <input type="radio" name="q6" value="D"> D) Sympathetic Nervous System
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p>7. Which nervous system helps you to regulate the body to normal functioning of body?</p>
+            <input type="radio" name="q7" value="A"> A) Central Nervous System<br>
+            <input type="radio" name="q7" value="B"> B) Sympathetic Nervous System<br>
+            <input type="radio" name="q7" value="C"> C) Motor Nervous System<br>
+            <input type="radio" name="q7" value="D"> D) Parasympathic Nervous System
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>8. Spinal cord consist of how many pairs of nerves?</p>
+            <input type="radio" name="q8" value="A"> A) 31<br>
+            <input type="radio" name="q8" value="B"> B) 34<br>
+            <input type="radio" name="q8" value="C"> C) 32<br>
+            <input type="radio" name="q8" value="D"> D) 33
+        </div>
+        <!-- Question 9 -->
+        <div class="question">
+            <p>9. If _______ is damaged the patient will sleep in paralysis?</p>
+            <input type="radio" name="q9" value="B"> B) Nerves<br>
+            <input type="radio" name="q9" value="C"> C) Spinal Cord<br>
+            <input type="radio" name="q9" value="D"> D) Heart
+            <input type="radio" name="q9" value="A"> A) Brain<br>
+        </div>
+        <!-- Question 10 -->
+        <div class="question">
+            <p>10. ______ is alarm clock of the body?</p>
+            <input type="radio" name="q10" value="A"> A) Hind Brain<br>
+            <input type="radio" name="q10" value="B"> B) Mid Brain<br>
+            <input type="radio" name="q10" value="C"> C) Fore Brain<br>
+            <input type="radio" name="q10" value="D"> D) Side Brain
+        </div>
+        <!-- Question 11 -->
+        <div class="question">
+            <p>11. _______ is the first contact point between spinal cord and the upper region of the brain?</p>
+            <input type="radio" name="q11" value="A"> A) Hippo Campus<br>
+            <input type="radio" name="q11" value="B"> B) Fore Brain<br>
+            <input type="radio" name="q11" value="C"> C) Mid Brain<br>
+            <input type="radio" name="q11" value="D"> D) Hind Brain
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <p>12. Mid brain is also called as______?</p>
+            <input type="radio" name="q12" value="A"> A) Ascending Reticular Activating System (ARAS)<br>
+            <input type="radio" name="q12" value="B"> B) Descending Reticular Inhibitory System (DRIS)<br>
+            <input type="radio" name="q12" value="C"> C) Peripheral Nervous Arousal Circuit (PNA)<br>
+            <input type="radio" name="q12" value="D"> D) Limbic Activation Network (LAN)
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <p>13. _______  differentiate  from other spicies species?</p>
+            <input type="radio" name="q13" value="A"> A) CNS<br>
+            <input type="radio" name="q13" value="B"> B) Limbic System<br>
+            <input type="radio" name="q13" value="C"> C) Cerebral Cortex<br>
+            <input type="radio" name="q13" value="D"> D) Thalamus
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <p>14. ________ play an important Role in formation of new memories?</p>
+            <input type="radio" name="q14" value="A"> A) Limbic system<br>
+            <input type="radio" name="q14" value="B"> B) Amygedala<br>
+            <input type="radio" name="q14" value="C"> C) Thalamus<br>
+            <input type="radio" name="q14" value="D"> D) Hippo Campus
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <p>15. Resposible for emotion of fear?</p>
+            <input type="radio" name="q15" value="A"> A) Heart<br>
+            <input type="radio" name="q15" value="B"> B) Thalamus<br>
+            <input type="radio" name="q15" value="C"> C) Hippo Campus<br>
+            <input type="radio" name="q15" value="D"> D) Amygedala
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <p>16. Knowledge of the world depend upon namely three basic process namely?</p>
+            <input type="radio" name="q16" value="A"> A) Sension,Attention & Perception<br>
+            <input type="radio" name="q16" value="B"> B) Intuition, Cognition, & Recognition<br>
+            <input type="radio" name="q16" value="C"> C) Reflection, Coordination, & Observation<br>
+            <input type="radio" name="q16" value="D"> D) Imagination, Distraction, & Interpretation
+        </div>
+        <!-- Question 17 -->
+        <div class="question">
+            <p>17. ______ is the outermost layer or the most transparent layer of the eyes?</p>
+            <input type="radio" name="q17" value="A"> A) IRIS<br>
+            <input type="radio" name="q17" value="B"> B) Pupil<br>
+            <input type="radio" name="q17" value="C"> C) Cornea <br>
+            <input type="radio" name="q17" value="D"> D) Lens
+        </div>
+        <!-- Question 18 -->
+        <div class="question">
+            <p>18. How much light enter your eyes depend on the ______?</p>
+            <input type="radio" name="q18" value="A"> A) Lens<br>
+            <input type="radio" name="q18" value="B"> B) Pupil<br>
+            <input type="radio" name="q18" value="C"> C) IRIS<br>
+            <input type="radio" name="q18" value="D"> D) Cornea
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <p>19. Individual readiness to deal with stimuli that appear before him/her is called as ?</p>
+            <input type="radio" name="q19" value="A"> A) Vigilance<br>
+            <input type="radio" name="q19" value="B"> B) Awareness<br>
+            <input type="radio" name="q19" value="C"> C) Sleepiness<br>
+            <input type="radio" name="q19" value="D"> D) Alertness
+        </div>
+        <!-- Question 20 -->
+        <div class="question">
+            <p>20. The visible external part of your ear is called as?</p>
+            <input type="radio" name="q20" value="A"> A) Auricle or Pinna<br>
+            <input type="radio" name="q20" value="B"> B) Ear cannal<br>
+            <input type="radio" name="q20" value="C"> C) Temporal Bone<br>
+            <input type="radio" name="q20" value="D"> D) Eardrum
+        </div>
+       
+
+
+
+        <!-- Add more questions as needed -->
+
+        <!-- Submit Button -->
+        <button onclick="calculateResults()">Submit</button>
+
+        <!-- Results Section -->
+        <div id="results" class="results"></div>
+    </div>
+    
+    <script>
+        function calculateResults() {
+            let score = 0;
+            let totalQuestions = 20; // Update this count based on the total number of questions
+
+            // Correct answers for each question
+            const answers = {
+                q1: "A",
+                q2: "C",
+                q3: "A",
+                q4: "B",
+                q5: "B",
+                q6: "B",
+                q7: "D",
+                q8: "A",
+                q9: "C",
+                q10: "B",
+                q11: "D",
+                q12: "A",
+                q13: "C",
+                q14: "D",
+                q15: "D",
+                q16: "A",
+                q17: "C",
+                q18: "C",
+                q19: "D",
+                q20: "A",
+
+            };
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                let question = document.querySelector(`.question:nth-of-type(${i})`);
+                let selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                let correctAnswer = answers[`q${i}`];
+
+                if (selectedOption) {
+                    if (selectedOption.value === correctAnswer) {
+                        score++;
+                        question.innerHTML += `<p class="correct">Correct!</p>`;
+                    } else {
+                        question.innerHTML += `<p class="incorrect">Incorrect! The correct answer is ${correctAnswer}.</p>`;
+                    }
+                } else {
+                    question.innerHTML += `<p class="incorrect">You didn't select an answer. The correct answer is ${correctAnswer}.</p>`;
+                }
+            }
+
+            // Display the total score
+            let resultsDiv = document.getElementById('results');
+            resultsDiv.textContent = `You scored ${score} out of ${totalQuestions}`;
+        }
+    </script>
+</body>
+</html>
+
